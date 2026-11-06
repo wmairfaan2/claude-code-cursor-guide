@@ -1,75 +1,60 @@
-# Project A 00
+# Claude Code in Cursor: Beginner Guide
 
-> One-sentence summary of what this project does and who it's for.
+> A step-by-step study guide for beginners learning to code with [Claude Code](https://code.claude.com/docs) inside the [Cursor](https://cursor.com) editor.
 
-## Overview
+## 📄 Read the guide
 
-Describe the problem this project solves, the approach it takes, and its current status (e.g. prototype, active development, stable).
+**[Claude-Code-in-Cursor-Beginner-Guide.pdf](docs/Claude-Code-in-Cursor-Beginner-Guide.pdf)** (12 pages)
 
-## Features
+Work through the lessons in order. Each one ends with a checklist so you can track your progress.
 
-- Feature one
-- Feature two
-- Feature three
+| # | Lesson | You'll learn |
+|---|--------|--------------|
+| 1 | Key ideas | What Cursor, Claude Code, CLAUDE.md, subagents and skills are |
+| 2 | Install everything | Installing the Claude Code CLI and the Cursor extension on Windows |
+| 3 | Connect to Cursor | Using `claude` in the terminal, `/ide`, and the chat panel |
+| 4 | Organize your project | Folder layout, `CLAUDE.md`, settings, what to commit |
+| 5 | Talk to Claude | Good prompts, `@file`, `!command`, modes (Shift+Tab), stopping with Esc |
+| 6 | Slash commands | The commands to learn first: `/init`, `/clear`, `/plan`, `/diff`, `/code-review`, `/rewind`… |
+| 7 | Review & undo | Accepting or rejecting diffs, `/rewind`, using git as a safety net |
+| 8 | Subagents | Creating helper agents in `.claude/agents/` |
+| 9 | Custom commands | Making your own `/commands` with skills |
+| 10 | Daily workflow | Explore → plan → code → review → commit |
 
-## Getting Started
+It ends with a cheat sheet, practice exercises and links to the official docs.
 
-### Prerequisites
-
-List what someone needs installed before they begin, for example:
-
-- [Git](https://git-scm.com/)
-- Language runtime / SDK (e.g. Node.js 20+, Python 3.12+)
-
-### Installation
-
-```bash
-git clone <repository-url>
-cd "Project A 00"
-# install dependencies, e.g.:
-# npm install        or        pip install -r requirements.txt
-```
-
-### Running
-
-```bash
-# command to start the project, e.g.:
-# npm start          or        python main.py
-```
-
-## Usage
-
-Show a short example of how to use the project once it's running.
-
-```bash
-# example command or code snippet
-```
-
-## Project Structure
+## What's in this repo
 
 ```text
-Project A 00/
-├── README.md        # This file
-└── ...              # Add key folders and files as the project grows
+├── docs/
+│   └── Claude-Code-in-Cursor-Beginner-Guide.pdf   # The study guide
+├── .claude/
+│   └── agents/
+│       └── researcher.md                          # Example subagent (read-only researcher)
+├── CLAUDE.md                                      # Project notes Claude Code reads each session
+└── README.md                                      # This file
 ```
 
-## Testing
+## Try the example subagent
+
+Clone the repo, open it in Cursor, and start Claude Code in the terminal:
 
 ```bash
-# command to run tests, e.g.:
-# npm test           or        pytest
+git clone https://github.com/wmairfaan2/claude-code-cursor-guide.git
+cd claude-code-cursor-guide
+claude
 ```
 
-## Contributing
+Then ask: *"Use the researcher agent to explain how CLAUDE.md works."*
 
-1. Create a branch from `main`: `git checkout -b feature/my-change`
-2. Commit your changes with clear messages.
-3. Open a pull request describing what changed and why.
+## A note on accuracy
+
+The guide was researched from the official Claude Code and Cursor docs in November 2026. Both tools update often, so if something looks different, check `/help` and `claude --version`, or the [official docs](https://code.claude.com/docs).
 
 ## License
 
-Specify a license (e.g. MIT) or state that the project is private / all rights reserved.
+No license has been chosen yet, so all rights are reserved by default.
 
 ## Contact
 
-Maintainer: wmairfaan2
+Maintainer: [wmairfaan2](https://github.com/wmairfaan2)

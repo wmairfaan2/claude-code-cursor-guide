@@ -13,5 +13,5 @@ Until code exists, do not assume a stack or run build/test commands. Once the pr
 
 ## Repository notes
 
-- The local branch is `master`, but the README's contributing steps (and the expected PR base) refer to `main`. Confirm with the user which name to use before the first commit or PR.
+- The default branch is `main`, pushed to `origin` (https://github.com/wmairfaan2/claude-code-cursor-guide, public).
 - When real code is added, update the placeholder sections of `README.md` to match it.
